@@ -1,6 +1,6 @@
 @media only screen and (min-width: 286px) {
   body {
-    background-image: url(/img/fondo-vertical.svg);
+    background-image: url(img/fondo-vertical.svg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 
 @media only screen and (min-width: 968px) {
   body {
-    background-image: url(/img/fondo-horizontal.svg);
+    background-image: url(img/fondo-horizontal.svg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
