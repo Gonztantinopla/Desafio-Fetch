@@ -1,0 +1,22 @@
+[
+    {
+    "id": 1,
+    "nombre": "Maria Smantha",
+    "avatar": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp",
+    "reseña": "Endeudarme nunca fue TAN facil. gracias Cuotix por ayudarme en mi proyecto."
+    }, 
+    {
+    "id": 2,
+    "nombre": "Lisa Madrow",
+    "avatar": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp",
+    "reseña": "Logre abrir mi cafeteria de especialidad en unos pocos pasos. Cotize todos los articulos que necesitaba y en minutos ya tenia mi plan armado!."
+
+    }, 
+    {
+    "id": 3,
+    "nombre": "John Smit",
+    "avatar": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp",
+    "reseña": "Pagué mi curso de latin! Delectus impedit saepe officiis ab aliquam repellat rem unde ducimus."
+
+    }
+]
