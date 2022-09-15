@@ -104,8 +104,9 @@ function calculoFinal(num1, cuotas) {
             valorFinal = (num1 * 1.31)
         case "6 cuotas":
             valorFinal = (num1 * 1.39)
+        return valorFinal
     }
-    return valorFinal;
+    
 }
 
 function calculoCuotas(num1, cuotas) {
@@ -123,19 +124,9 @@ function calculoCuotas(num1, cuotas) {
             calculovalorCuota = (num1 * 1.31) / 5
         case "6 cuotas":
             calculovalorCuota = (num1 * 1.39) / 6
+        return calculovalorCuota
     }
-    return calculovalorCuota;
-}
-
-function consultarCotizaciones() {
-    console.table(cotizaciones)
-}
-
-function borrarUltimo() {
-    alert("se eliminó: " + cotizaciones[cotizaciones.length - 1].item);
-    console.log("se eliminó:", cotizaciones[cotizaciones.length - 1]);
-    cotizaciones.pop()
-
+    
 }
 
 
