@@ -90,43 +90,41 @@ else{
 }
 
 function calculoFinal(num1, cuotas) {
-    let valorFinal
     switch (cuotas) {
         case "1 cuota":
-            valorFinal = num1
+            return num1
         case "2 cuotas":
-            valorFinal = (num1 * 1.12)
+            return (num1 * 1.12)
         case "3 cuotas":
-            valorFinal = (num1 * 1.18)
+            return (num1 * 1.18)
         case "4 cuotas":
-            valorFinal = (num1 * 1.24)
+            return (num1 * 1.24)
         case "5 cuotas":
-            valorFinal = (num1 * 1.31)
+            return (num1 * 1.31)
         case "6 cuotas":
-            valorFinal = (num1 * 1.39)
-        return valorFinal
+            return (num1 * 1.39)
+        default:
+            return "elegir entre 1 y 6 cuotas"
     }
-    
 }
 
 function calculoCuotas(num1, cuotas) {
-    let calculovalorCuota;
     switch (cuotas) {
         case "1 cuota":
-            calculovalorCuota = num1
+            return num1
         case "2 cuotas":
-            calculovalorCuota = (num1 * 1.12) / 2
+            return (num1 * 1.12) / 2
         case "3 cuotas":
-            calculovalorCuota = (num1 * 1.18) / 3
+            return (num1 * 1.18) / 3
         case "4 cuotas":
-            calculovalorCuota = (num1 * 1.24) / 4
+            return (num1 * 1.24) / 4
         case "5 cuotas":
-            calculovalorCuota = (num1 * 1.31) / 5
+            return (num1 * 1.31) / 5
         case "6 cuotas":
-            calculovalorCuota = (num1 * 1.39) / 6
-        return calculovalorCuota
+            return (num1 * 1.39) / 6
+        default:
+            return "elegir entre 1 y 6 cuotas"
     }
-    
 }
 
 
