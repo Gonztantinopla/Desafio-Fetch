@@ -1,6 +1,7 @@
 const cotizaciones = []
 const testimoniosData = "testimonios.json"
 const testimoniosSection = document.getElementById("reviewsTestomonials")
+let recargado = false
 
 class Cotizacion {
     constructor(item, valorContado, cuotas, valorCuota, precioFinal) {
@@ -53,10 +54,10 @@ function miUser(){
     
 }
 
-var botonUser = document.getElementById("btn-user")
+const botonUser = document.getElementById("btn-user")
 botonUser.addEventListener('click', miUser)
 
-var botonCalcular = document.getElementById("botonCalcular")
+const botonCalcular = document.getElementById("botonCalcular")
 botonCalcular.addEventListener("click", calcular)
 
 function calcular() {
@@ -176,18 +177,21 @@ function mostrarCotizaciones(){
 
 
 
-var BtonLoadStorage = document.getElementById("botonLoadStorage")
+const BtonLoadStorage = document.getElementById("botonLoadStorage")
 BtonLoadStorage.addEventListener("click", recuperarCotizaciones)
 
 function recuperarCotizaciones (){
+    if (recargado == false) {
     if (localStorage.cotizaciones){
         const cotizacionesGuardadas = JSON.parse(localStorage.getItem("cotizaciones"))
             cotizacionesGuardadas.forEach(e =>{
                 cotizaciones.push(e)
             })
-    }
-printCotizaciones()
-mostrarCotizaciones()
+            printCotizaciones()
+            mostrarCotizaciones()
+    recargado = true
+    }}
+
 }
 
 // function limpiarCotizacionesStorage(){
