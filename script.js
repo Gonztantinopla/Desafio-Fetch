@@ -160,7 +160,7 @@ function printCotizaciones() {
     const cuerpo = document.getElementById("cuerpo")
     cotizaciones.forEach(cotizacion => {
         cuerpo.innerHTML += `<tr>
-        <td>${cotizacion.item}</td>
+        <td>•${cotizacion.item}</td>
         <td>${cotizacion.valorContado}</td>
         <td>${cotizacion.cuotas}</td>
         <td>${cotizacion.valorCuota}</td>

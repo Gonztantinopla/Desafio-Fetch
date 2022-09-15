@@ -72,7 +72,7 @@ li {
   font-size-adjust: 1.3rem;
 }
 
-.calculador .recuadro .boton {
+.boton {
   text-transform: uppercase;
   font-size: 1rem;
   border-radius: 6px;
@@ -86,7 +86,6 @@ li {
   background-size: cover;
   border-radius: 9px;
   min-height: 180px;
-  height: 50vh;
   max-height: 900px;
   padding-inline: 5%;
   padding-top: 10px;
@@ -166,5 +165,21 @@ section {
   background-size: cover;
   margin-bottom: 50px;
   border-radius: 6px;
+}
+
+.subir {
+  height: 50px;
+  width: 50px;
+  background-color: orange;
+  border: 5px solid white;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 10px #333;
+          box-shadow: 2px 2px 10px #333;
 }
 /*# sourceMappingURL=style.css.map */
